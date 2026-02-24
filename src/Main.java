@@ -1,3 +1,7 @@
+import Model.Livro;
+import Model.User;
+import Service.Biblioteca;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -64,9 +68,9 @@ public class Main {
                             System.out.println(livroParaEmprestar.getTitulo() + " " + livroParaEmprestar.getAutor());
 
                             if (livroParaEmprestar == null) {
-                                System.out.println("Livro não encontrado");
+                                System.out.println("Model.Livro não encontrado");
                             } else if (!livroParaEmprestar.isDisponivel()) {
-                                System.out.println("Livro indisponivel");
+                                System.out.println("Model.Livro indisponivel");
                             } else if (biblioteca.findUserById(matricula) == null) {
                                 System.out.println("Usuario não encontrado");
                             } else {
@@ -86,9 +90,9 @@ public class Main {
                             livroParaEmprestar = biblioteca.getLivroByTitleAndAuthor(title, author);
 
                             if (livroParaEmprestar == null) {
-                                System.out.println("Livro não encontrado");
+                                System.out.println("Model.Livro não encontrado");
                             } else if (!livroParaEmprestar.isDisponivel()) {
-                                System.out.println("Livro indisponivel");
+                                System.out.println("Model.Livro indisponivel");
                             } else if (biblioteca.findUserById(matricula) == null) {
                                 System.out.println("Usuario não encontrado");
                             } else {

@@ -1,3 +1,8 @@
+package Service;
+
+import Model.Livro;
+import Model.User;
+
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.DoubleSummaryStatistics;
@@ -78,8 +83,8 @@ public class Biblioteca {
 
     public void stats() {
         stats = books.stream().mapToDouble(Livro::getPreco).summaryStatistics();
-        System.out.println("Livro mais caro: " + stats.getMax());
-        System.out.println("Livro mais barato: " + stats.getMin());
+        System.out.println("Model.Livro mais caro: " + stats.getMax());
+        System.out.println("Model.Livro mais barato: " + stats.getMin());
         System.out.println("Quantidade de livros: " + stats.getCount());
     }
 
@@ -104,7 +109,7 @@ public class Biblioteca {
 
     @Override
     public String toString() {
-        return "Biblioteca{" +
+        return "Service.Biblioteca{" +
                 "livro=" + books +
                 ", usuario=" + register +
                 '}';
