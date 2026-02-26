@@ -20,12 +20,14 @@ public class Main {
         while (running) {
             System.out.println("Cadastrar/Emprestar : 1");
             System.out.println("Listar: 2");
+            System.out.println("Encerrar programa: 0");
             escolha1 = s.nextInt();
             switch (escolha1) {
                 case 1:
                     System.out.println("Cadastrar usuário: 1");
                     System.out.println("Cadastrar livro: 2");
-                    System.out.println("Encerrar programa: 0");
+                    System.out.println("Emprestar livro: 3");
+                    System.out.println("Devolver livro: 4");
                     escolha2 = s.nextInt();
                     int matricula;
                     String title;
