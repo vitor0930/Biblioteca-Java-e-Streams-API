@@ -70,9 +70,9 @@ public class Main {
                             System.out.println(livroParaEmprestar.getTitulo() + " " + livroParaEmprestar.getAutor());
 
                             if (livroParaEmprestar == null) {
-                                System.out.println("Model.Livro não encontrado");
+                                System.out.println("Livro não encontrado");
                             } else if (!livroParaEmprestar.isDisponivel()) {
-                                System.out.println("Model.Livro indisponivel");
+                                System.out.println("Livro indisponivel");
                             } else if (biblioteca.findUserById(matricula) == null) {
                                 System.out.println("Usuario não encontrado");
                             } else {
