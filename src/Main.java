@@ -18,7 +18,7 @@ public class Main {
         int escolha2;
         int idMat = 0;
         while (running) {
-            System.out.println("Cadastrar/Emprestar : 1");
+            System.out.println("Cadastrar/Emprestar: 1");
             System.out.println("Listar: 2");
             System.out.println("Encerrar programa: 0");
             escolha1 = s.nextInt();
